@@ -25,8 +25,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="16dp">
 
                 <TextView
                     android:id="@+id/octopus_question"
@@ -41,25 +41,25 @@
 
                     <RadioButton
                         android:id="@+id/octopus_answer1"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="3 Maybe"
                         android:textColor="@color/white" />
 
                     <RadioButton
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="4 for sure"
                         android:textColor="@color/white" />
 
                     <RadioButton
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="5 it is"
                         android:textColor="@color/white" />
 
                     <RadioButton
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="May be it has no heart"
                         android:textColor="@color/white" />
@@ -69,18 +69,19 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="300dp">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:scaleType="fitStart"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
                 android:src="@drawable/cube" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="16dp">
 
                 <TextView
                     android:id="@+id/cube_question"
@@ -125,18 +126,19 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="350dp">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="250dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/violin" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="16dp">
 
                 <TextView
                     android:id="@+id/violin_question"
@@ -179,24 +181,25 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="300dp">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="250dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/day" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="16dp">
 
                 <TextView
                     android:id="@+id/day_question"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4) How many seconds are there i a day?"
+                    android:text="4) How many seconds are there in a day?"
                     android:textColor="@color/white" />
 
                 <RadioGroup
@@ -226,6 +229,116 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="43,200 secs"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dice" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/dice_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5) How many dots are there in a pair of dice?"
+                    android:textColor="@color/white" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/dice_answer1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="42 dots"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="36 dots"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="54 maybe"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="72 for sure"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/blackbox" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/black_box_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6) What Color Are Aircraft Black Boxes?"
+                    android:textColor="@color/white" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/black_box_answer1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bright Orange"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Black it is"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dark green"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="White for sure"
                         android:textColor="@color/white" />
                 </RadioGroup>
             </LinearLayout>
